@@ -8,7 +8,10 @@
   dollPrototype: MobHarpyDummy
   skinColoration: HumanToned
   baseScale: "0.9, 0.9"
-  minHeight: 0.90
+  # Delta V Start - Due to the actual real world variance in avian size, I changed the range to be slightly wider, allowing for much larger, and smaller, Harpies, without going into territory deemed unfair.
+  minHeight: 0.85
+  maxHeight: 1.35
+  # Delta V End
 
 - type: speciesBaseSprites
   id: MobHarpySprites
@@ -34,7 +37,6 @@
     RFoot: MobHarpyRFoot
     RArmExtension: MobHumanoidAnyMarking # Frontier
 
-
 - type: markingPoints
   id: MobHarpyMarkingLimits
   points:
@@ -47,22 +49,22 @@
     Tail:
       points: 1
       required: true
-      defaultMarkings: [ HarpyTailPhoenix ]
+      defaultMarkings: [HarpyTailPhoenix]
     HeadTop:
       points: 1
       required: true
-      defaultMarkings: [ HarpyEarsDefault ]
+      defaultMarkings: [HarpyEarsDefault]
     Chest:
       points: 2
       required: true
-      defaultMarkings: [ HarpyChestDefault ]
+      defaultMarkings: [HarpyChestDefault]
     Legs:
       points: 2
       required: false
     Arms:
       points: 1
       required: false
-      defaultMarkings: [ HarpyWingDefaultHuescale ]
+      defaultMarkings: [HarpyWingDefaultHuescale]
 
 - type: humanoidBaseSprite
   id: MobHarpyHead
